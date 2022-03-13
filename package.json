@@ -1,0 +1,30 @@
+{
+	"name": "anime_pp_banner_api",
+	"version": "1.0.0",
+	"description": "Usefull api to return anime profile pictures and banner to be easily used for the creation of \"legit\" accounts on different platform.",
+	"main": "index.js",
+	"scripts": {
+		"test": "nodemon index.js",
+		"start": "nodemon index.js"
+	},
+	"nodemonConfig": {
+		"ignore": [
+			"db/*"
+		]
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/gpaul-42/anime_pp_banner_API.git"
+	},
+	"author": "gpaul | Faldin#8570",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/gpaul-42/anime_pp_banner_API/issues"
+	},
+	"homepage": "https://github.com/gpaul-42/anime_pp_banner_API#readme",
+	"dependencies": {
+		"chance": "^1.1.8",
+		"express": "^4.17.3",
+		"nodemon": "^2.0.15"
+	}
+}
