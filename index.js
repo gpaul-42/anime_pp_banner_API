@@ -9,8 +9,8 @@ const fs = require('fs')
 /*
 	INIT
 */
-const db_path = __dirname + "/db"
 
+	//////CLASS//////
 class info {
 	constructor() {
 		this.pp_path = db_path + '/pp/'
@@ -29,9 +29,11 @@ class info {
 	}
 }
 
-
+	//////MISC//////
+const db_path = __dirname + "/db"
 const db = new info()
 const app = express()
+app.listen(4000)
 
 /*
 	EXPRESS
@@ -52,4 +54,3 @@ app.get('/api/banner', (req, res) => {
 	else
 		res.sendFile(db.banner_path + db.banner_files[db.draw_int(db.banner_size)])
 })
-app.listen(4000)
